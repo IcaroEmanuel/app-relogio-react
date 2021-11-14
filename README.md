@@ -8,3 +8,4 @@ Desenvolvimento de um relógio digital utilizando React
 ## Tecnologias usadas
 * React
 * React-router
+* react-testing-library
