@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "test": "react-scripts test",
+    "test-coverage": "react-scripts test --coverage --watchAll=false"
   },
   "dependencies": {
     "react": "^17.0.0",
