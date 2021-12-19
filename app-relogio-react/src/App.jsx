@@ -6,20 +6,20 @@ import Stopwatch from './pages/Stopwatch';
 import Timer from './pages/Timer';
 import PageNotFound from './pages/PageNotFound';
 import './App.css';
+import Toolbar from './components/Toolbar';
 
 class App extends Component{
   render() {
     return (
       <main className="App">
-        <BrowserRouter>
-          <Switch>
-            <Route exact path="/" component={ Watch } />
-            <Route exact path="/alarm" component={ Alarm } />
-            <Route exact path="/stopwatch" component={ Stopwatch } />
-            <Route exact path="/timer" component={ Timer } />
-            <Route path="/*" component={ PageNotFound } />
-          </Switch>
-        </BrowserRouter>
+        <Toolbar />
+        <Switch>
+          <Route exact path="/" component={ Watch } />
+          <Route exact path="/alarm" component={ Alarm } />
+          <Route exact path="/stopwatch" component={ Stopwatch } />
+          <Route exact path="/timer" component={ Timer } />
+          <Route path="/*" component={ PageNotFound } />
+        </Switch>
       </main>
     )
   }
