@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Watch extends Component {
-  render() {
-    return (
-      <section>
-        Relógio mundial
-      </section>
-    );
-  };
+export default function Watch() {
+  return (
+    <section>
+      Relógio mundial
+    </section>
+  );
 }
