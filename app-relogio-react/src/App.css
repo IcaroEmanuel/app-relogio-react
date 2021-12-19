@@ -1,5 +1,33 @@
+body {
+  background-color: rgb(22, 22, 26);
+  color: rgb(167, 169, 190);
+  font-family: monospace;
+  font-size: large;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  background-color: rgb(17, 16, 16);
+}
+
+.menu {
+  display: flex;
+  overflow-x: auto;
+}
+
+.menu a {
+  color: rgb(167, 169, 190);
+  text-decoration: none;
+  padding: 10px;
+}
+
 .App {
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .App-logo {
