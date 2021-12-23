@@ -9,13 +9,21 @@ export default function Watch() {
     setCurrentTime(actualHour);
   }
 
-    // useEffect - https://pt-br.reactjs.org/docs/hooks-overview.html
-    useEffect(() => setInterval(() => getTime(), 1000));
+  // useEffect - https://pt-br.reactjs.org/docs/hooks-overview.html
+  useEffect(() => setInterval(() => getTime(), 1000));
+
+  const getCurrentTimezoneName = () => {
+    const date = new Date;
+    const dateToString = date.toString();
+    const CurrentTimezone = dateToString.slice(dateToString.indexOf('(') + 1, dateToString.length - 1);
+    return CurrentTimezone;
+  }
 
   return (
     <section>
       Relógio mundial
       { currentTime }
+      { getCurrentTimezoneName() }
     </section>
   );
 }
