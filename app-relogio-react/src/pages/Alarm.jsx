@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Alarm extends Component {
-  render() {
-    return (
-      <section>
-        Alarme
-      </section>
-    );
-  };
+export default function Alarm() {
+  return (
+    <section>
+      Alarme
+    </section>
+  );
 }

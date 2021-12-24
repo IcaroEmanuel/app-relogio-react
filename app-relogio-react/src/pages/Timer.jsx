@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Timer extends Component {
-  render() {
+export default function Timer() {
     return (
       <section>
         Temporizador
       </section>
     );
-  };
 }

@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class PageNotFound extends Component {
-  render() {
-    return (
-      <section>
-        Página não encontrada
-      </section>
-    );
-  };
+export default function PageNotFound() {
+  return (
+    <section>
+      Página não encontrada
+    </section>
+  );
 }
