@@ -56,6 +56,21 @@ header {
   color: #61dafb;
 }
 
+.section-current-time {
+  padding: 50px;
+  text-align: center;
+
+}
+
+.current-time {
+  margin: 15px;
+  font-weight: 1000;
+}
+
+.current-timezone {
+  font-size: large;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
