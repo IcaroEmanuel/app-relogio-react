@@ -21,9 +21,14 @@ export default function Watch() {
 
   return (
     <section>
-      Relógio mundial
-      { currentTime }
-      { getCurrentTimezoneName() }
+      <section className='section-current-time'>
+        <div className='current-time'>
+          { currentTime }
+        </div>
+        <div className='current-timezone'>
+          { getCurrentTimezoneName() }
+        </div>
+      </section>
     </section>
   );
 }
